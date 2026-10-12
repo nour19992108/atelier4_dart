@@ -10,3 +10,8 @@ void depot(double montant) {
    } 
 }
 }
+void main() {
+  var compte = Compte("Noureddine001");
+  compte.depot(150.0);
+  print(compte.solde);
+  } 
