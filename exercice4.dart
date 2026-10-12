@@ -25,4 +25,14 @@ void afficherType() {
   print("Ceci est un Film : $titre ($dureeMinutes minutes)");
 }
 }
+void main() {
+  List<Media> catalogue = [];
+catalogue.add(Livre("Le chemin du succès", "Noureddine"));
+catalogue.add(Livre("Mon aventure", "Amine"));
+catalogue.add(Film("Le grand voyage", 120));
+catalogue.add(Film("Mission spéciale", 95));
+for (var media in catalogue) {
+  media.afficherType();
+}
+}
 
